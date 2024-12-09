@@ -28,12 +28,12 @@ export const Timeline = ({
     (<div
       className="w-full bg-[#121B42] font-sans md:px-10"
       ref={containerRef}>
-      <div className="max-w-7xl mx-auto py-20">
-        <h2 className="text-lg md:text-4xl mb-4 text-[#FCFFFF] uppercase font-semibold max-w-4xl">
+      <div className="max-w-sm md:max-w-7xl mx-auto py-20">
+        <h2 className="text-lg md:text-4xl mb-4 text-[#FCFFFF] uppercase font-semibold max-w-4xl text-center md:text-start">
           Changelog from my journey
         </h2>
         <p
-          className="text-[#B4B4B4] text-sm md:text-base max-w-sm">
+          className="text-[#B4B4B4] text-sm md:text-base max-w-sm text-center md:text-start">
           I&apos;ve been working as a frontend developer for the past 2 years. Here&apos;s
           a timeline of my journey.
         </p>

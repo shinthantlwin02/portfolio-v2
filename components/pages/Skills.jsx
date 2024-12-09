@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import ProgressCircle from '@/components/ui/ProgressCircle';
 import { skills } from '@/data/data.js';
+import { motion as m } from 'framer-motion';
 
 const Skills = () => {
   const [activeTab, setActiveTab] = useState(1);
@@ -21,18 +22,18 @@ const Skills = () => {
     <div className='py-20 container mx-auto bg-[#121B42]'>
       {/* header */}
       <div className='flex flex-col items-center'>
-        <h1 className='text-3xl text-center mb-2 text-[#FCFFFF] font-bold uppercase'>
+        <m.h1 className='text-3xl text-center mb-2 text-[#FCFFFF] font-bold uppercase' initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay:0, duration:1}}>
           Skills
-        </h1>
-        <p className='text-md text-center font-medium text-[#B4B4B4] max-w-[800px]'>
+        </m.h1>
+        <m.p className='text-md text-center font-medium text-[#B4B4B4] max-w-[800px]' initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay:0.3, duration:1}}>
           I provide a full range of frontend development services focused on
           delivering functional and aesthetically pleasing websites
-        </p>
+        </m.p>
       </div>
       {/* header end */}
 
       {/* tabs */}
-      <div className='flex items-center justify-center gap-4 mt-10 mb-20'>
+      <m.div className='flex items-center justify-center gap-4 mt-10 mb-20' initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay:0.6, duration:1}}>
         <button
           className={`px-2.5 py-2 rounded-md uppercase text-sm ${
             activeTab === 1
@@ -63,11 +64,11 @@ const Skills = () => {
         >
           Soft Skills
         </button>
-      </div>
+      </m.div>
       {/* tabs end */}
 
       {/* skills */}
-      <div className='flex flex-wrap justify-center max-w-[800px] h-[250px] gap-10 mx-auto'>
+      <m.div className='flex flex-wrap justify-center w-full md:max-w-[800px] h-[600px] md:h-[250px] gap-10 mx-auto' initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay:0.9, duration:1}}>
         {activeTab === 1
           ? skills.technical.map((skill, index) => (
               <ProgressCircle
@@ -91,7 +92,7 @@ const Skills = () => {
                 label={skill.title}
               />
             ))}
-      </div>
+      </m.div>
       {/* skills end */}
     </div>
   );

@@ -10,7 +10,7 @@ import Experiences from '@/components/pages/Experiences';
 
 const Home = () => {
   return (
-    <div className=''>
+    <div>
       <Hero />
       <Projects />
       <Services />

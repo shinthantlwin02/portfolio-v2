@@ -1,20 +1,21 @@
 import ProjectCard from './ProjectCard';
 import { projects } from '@/data/data.js';
+import {motion as m} from 'framer-motion';
 
 const Projects = () => {
   return (
-    <div className='bg-[#121B42] py-20'>
+    <div className='bg-[#121B42] py-20' id="projects">
       <div className='flex flex-col items-center'>
-        <h1 className='text-3xl text-center mb-2 text-[#FCFFFF] font-bold uppercase'>
+        <m.h1 className='text-3xl text-center mb-2 text-[#FCFFFF] font-bold uppercase' initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay:0, duration:1}}>
           My Projects
-        </h1>
-        <p className='text-md text-center font-medium text-[#B4B4B4] max-w-[800px]'>
+        </m.h1>
+        <m.p className='text-md text-center font-medium text-[#B4B4B4] max-w-[800px]' initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay:0.3, duration:1}}>
           Browse through my recent projects to see how I combine design and
           development to create seamless, intuitive web solutions
-        </p>
+        </m.p>
       </div>
 
-      <div className='flex items-center justify-between w-full overflow-x-scroll no-scrollbar scroll-smooth'>
+      <m.div className='flex items-center justify-between w-full overflow-x-scroll no-scrollbar scroll-smooth' initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay:0.6, duration:1}}>
         {projects.map((project, index) => (
           <ProjectCard
             key={index}
@@ -25,7 +26,7 @@ const Projects = () => {
             description={project.description}
           />
         ))}
-      </div>
+      </m.div>
     </div>
   );
 };
