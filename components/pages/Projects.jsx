@@ -15,7 +15,7 @@ const Projects = () => {
         </m.p>
       </div>
 
-      <m.div className='flex items-center justify-between w-full overflow-x-scroll no-scrollbar scroll-smooth' initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay:0.6, duration:1}}>
+      <m.div className='flex items-center justify-between w-full overflow-x-scroll no-scrollbar scroll-smooth' initial={{x:500}} whileInView={{x:0}} transition={{delay:0.6, duration:1}}>
         {projects.map((project, index) => (
           <ProjectCard
             key={index}

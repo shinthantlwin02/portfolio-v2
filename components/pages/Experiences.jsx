@@ -15,7 +15,7 @@ const Experiences = () => {
             create scalable, high-performance features that meet top standards
             of functionality and usability.
           </p>
-          <div className='grid grid-cols-1 md:grid-cols-2 gap-4 w-full'>
+          <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 w-full'>
             <img
               src='/images/circleX-1.png'
               alt='template'
@@ -53,7 +53,7 @@ const Experiences = () => {
             These projects gave me hands-on experience in React, focusing on
             creating clean designs and improving performance.
           </p>
-          <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+          <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
             <img
               src='/images/mmsit-1.png'
               alt='hero template'
@@ -88,7 +88,7 @@ const Experiences = () => {
             developed the frontend using React.
           </p>
 
-          <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+          <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
             <img
               src='/images/premio.png'
               alt='hero template'

@@ -22,6 +22,7 @@ const Certifications = () => {
               real-world projects, students acquire the expertise needed to
               succeed in the industry upon completion of the program{' '}
             </p>
+            
           </div>
 
           <div className='flex flex-col gap-2 items-center w-[10%] max-md:hidden'>

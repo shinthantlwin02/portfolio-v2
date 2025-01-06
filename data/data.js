@@ -28,6 +28,15 @@ export const projects = [
   },
   {
     id: 4,
+    title: 'Azure Luxe',
+    description:
+      'A sophisticated hotel booking platform built using React, designed to offer users an effortless and enjoyable experience when exploring and reserving accommodations.',
+    img: '/images/azure-luxe.png',
+    linkTitle: '/azure-luxe.com',
+    link: 'https://azure-luxe-b8ez.vercel.app/',
+  },
+  {
+    id: 5,
     title: 'Good Food Restaurant',
     description:
       'Jplus is a specialized job search and recruitment platform that connects Myanmar job seekers with employment opportunities in Japan.',
