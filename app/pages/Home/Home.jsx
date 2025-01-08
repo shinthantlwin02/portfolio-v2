@@ -8,6 +8,7 @@ import ProjectGallery from '@/components/pages/ProjectGallery';
 import Skills from '@/components/pages/Skills';
 import Experiences from '@/components/pages/Experiences';
 import Contact from '@/components/pages/Contact';
+import About from '@/components/pages/About';
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
       <Experiences />
       <Certifications />
       <Contact />
+      <About />
     </div>
   );
 };
