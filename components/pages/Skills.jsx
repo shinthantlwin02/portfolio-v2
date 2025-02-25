@@ -25,7 +25,7 @@ const Skills = () => {
         <m.h1 className='text-3xl text-center mb-2 text-[#FCFFFF] font-bold uppercase' initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay:0, duration:1}}>
           Skills
         </m.h1>
-        <m.p className='text-md text-center font-medium text-[#B4B4B4] max-w-[800px]' initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay:0.3, duration:1}}>
+        <m.p className='text-md text-center font-medium text-[#B4B4B4] max-w-[800px]' initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay:0.2, duration:1}}>
           I provide a full range of frontend development services focused on
           delivering functional and aesthetically pleasing websites
         </m.p>
@@ -33,7 +33,7 @@ const Skills = () => {
       {/* header end */}
 
       {/* tabs */}
-      <m.div className='flex flex-wrap items-center justify-center gap-4 mt-10 mb-20' initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay:0.6, duration:1}}>
+      <m.div className='flex flex-wrap items-center justify-center gap-4 mt-10 mb-20' initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay:0.4, duration:1}}>
         <button
           className={`px-2.5 py-2 rounded-md uppercase text-sm ${
             activeTab === 1
@@ -68,7 +68,7 @@ const Skills = () => {
       {/* tabs end */}
 
       {/* skills */}
-      <m.div className='grid grid-cols-3 md:flex md:flex-wrap justify-center w-full md:max-w-[800px] h-[600px] lg:h-[250px] gap-4 md:gap-10 mx-auto' initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay:0.9, duration:1}}>
+      <m.div className='grid grid-cols-3 md:flex md:flex-wrap justify-center w-full md:max-w-[800px] h-[600px] lg:h-[250px] gap-4 md:gap-10 mx-auto' initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay:0.6, duration:1}}>
         {activeTab === 1
           ? skills.technical.map((skill, index) => (
               <ProgressCircle

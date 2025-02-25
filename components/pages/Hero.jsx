@@ -19,11 +19,11 @@ const Hero = () => {
             <m.h1 className='text-white text-xl lg:text-4xl font-regular mb-8 uppercase' initial={{opacity:0}} animate={{opacity:1}} transition={{delay:0, duration:1}}>
               Transform Your Ideas into Stunning Digital Experiences <br /> With<FlipWords words={words}  className={cn('font-bold text-white')}/>
             </m.h1>
-            <m.p className='text-[#D9D9D9] text-sm lg:text-base mb-10' initial={{opacity:0}} animate={{opacity:1}} transition={{delay:0.5, duration:1}}>
+            <m.p className='text-[#D9D9D9] text-sm lg:text-base mb-10' initial={{opacity:0}} animate={{opacity:1}} transition={{delay:0.3, duration:1}}>
               I specialize in React and Next.js, creating dynamic, highly
               performant web applications tailored to your business needs.
             </m.p>
-            <m.button className='bg-[#01B2F6] text-[#050922] px-3 py-2 rounded-md'  initial={{opacity:0}} animate={{opacity:1}} transition={{delay:1, duration:1}}>
+            <m.button className='bg-[#01B2F6] text-[#050922] px-3 py-2 rounded-md'  initial={{opacity:0}} animate={{opacity:1}} transition={{delay:0.6, duration:1}}>
             <a
                 href="/files/CV.pdf" 
                 download="CV.pdf" 
@@ -36,8 +36,8 @@ const Hero = () => {
         {/* left content end */}
 
         {/* right content  */}
-        <m.div className="w-full lg:w-[40%] min-h-[400px] lg:min-h-full relative" initial={{opacity:0}} animate={{opacity:1}} transition={{delay:1.5, duration:1}}>
-          <Image src="/images/ellipse-hero.png" alt="ellipse" width="400" height="400" className="absolute top-20 right-0 md:right-40 lg:right-10"/>
+        <m.div className="w-full lg:w-[40%] min-h-[400px] lg:min-h-full relative" initial={{opacity:0}} animate={{opacity:1}} transition={{delay:1, duration:1}}>
+          <Image src="/images/ellipse-hero.png" alt="ellipse" width="400" height="400" className="absolute top-[28%] right-0 md:right-40 lg:right-10"/>
           <Image src="/images/shin.png" alt="shin thant lwin" width="500" height="500" className="absolute bottom-0 right-0 md:right-28 lg:right-0" />
         </m.div>
         {/* right content end */}
