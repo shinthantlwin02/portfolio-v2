@@ -16,6 +16,7 @@ const Certifications = () => {
               MMS One Stop IT Solutions(MMSIT)
             </h1>
             <p className='text-start md:text-end text-[#D9D9D9]'>
+              mmsit
               MMSIT’s Fronted Development certification program offers a
               comprehensive curriculum covering HTML, CSS, JavaScript, and
               react, ensuring students are well prepared for employment in

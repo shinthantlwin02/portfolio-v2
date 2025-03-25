@@ -9,7 +9,7 @@ const About = () => {
         <div>
             <m.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay:0, duration:1}} className="flex items-center gap-2 mb-8">
             <div className='bg-[#D9D9D9] w-1 h-6 md:h-10 shadow-[0px_0px_20px_4px_rgba(200,221,235,1)] shadow-white rounded-full'></div>
-            <h1 className="text-white text-lg md:text-xl lg:text-3xl font-semibold uppercase">About me</h1>
+            <h1 className="text-white text-lg md:text-xl lg:text-3xl font-semibold uppercase">About me - shin</h1>
             </m.div>
             <m.h1 initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay:0.1, duration:1}} className="text-white text-sm md:text-base lg:text-xl font-medium mb-8 uppercase">Hello, I am Shin Thant lwin</m.h1>
 
